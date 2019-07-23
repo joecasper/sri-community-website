@@ -1,0 +1,119 @@
+#header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 1000000;
+
+    .columns {
+        align-items: center;
+    }
+}
+
+#site-logo { //column
+    flex: 0 1 25%;
+
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+#main-navigation { //column
+    flex: 1 0 75%;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 30px;
+            display: block;
+            transition-duration: 0.5s;
+            position: relative;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                a {
+                    color: #1175e9;
+                }
+            }
+
+            a {
+                color: #555;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            &.current-menu-item {
+                a {
+                    color: #1175e9;
+                }
+            }
+
+            ul.sub-menu {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                z-index: 1000000;
+                transition: all 0.5s ease;
+                left: -12px;
+                padding-top: 10px;
+                display: none;
+                background-color: #fff;
+                width: 220px;
+
+                li {
+                    margin-left: 0;
+                    padding: 8px 12px;
+                    border-bottom: 1px solid #ccc;
+
+                    &:first-child {
+                        border-top: 3px solid #1175e9;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        color: #555;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+        
+                        a {
+                            color: #1175e9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+      }
+}
