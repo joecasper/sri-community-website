@@ -3,7 +3,7 @@
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Cormorant:600|Open+Sans:400,400i,600,600i|Raleway:600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant:600|Open+Sans:400,400i,600,600i|Raleway:600,800&display=swap" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
