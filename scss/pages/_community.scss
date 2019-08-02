@@ -1,6 +1,5 @@
 #content.has-sidebar {
     display: flex;
-    flex-wrap: wrap;
 
     article {
         flex: 1 1 75%;
@@ -9,6 +8,7 @@
 
     #sidebar {
         flex: 0 1 25%;
+        max-width: 300px;
     }
 
     .full-width {
@@ -80,37 +80,6 @@
         text-align: center;
         max-width: 80%;
         margin: 0 auto 50px;
-
-        .heading-with-separator {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        
-            .separator-holder {
-                height: 1px;
-                position: relative;
-                flex: 1 1 auto;
-                min-width: 10%;
-        
-                .separator-line {
-                    height: 1px;
-                    border-top: 1px solid #333;
-                    display: block;
-                    position: relative;
-                    top: 1px;
-                    width: 100%;
-                }
-            }
-        
-            h3 {
-                flex: 0 1 auto;
-                font-size: 20px;
-                padding: 0 15px;
-                margin-bottom: 0;
-            }
-        }
     }
 
 }

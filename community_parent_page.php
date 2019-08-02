@@ -48,15 +48,10 @@
         <!-- Full-width Content -->
         <div class="full-width-three-column">
             <header>
-                <div class="heading-with-separator">
-                    <span class="separator-holder">
-                        <span class="separator-line"></span>
-                    </span>
-                    <h3><?php the_field('additional_callouts_heading'); ?></h3>
-                    <span class="separator-holder">
-                        <span class="separator-line"></span>
-                    </span>
-                </div>
+                <?php    
+                    $sep_heading_text = get_field('additional_callouts_heading');
+                    include 'components/_heading_separator.php';
+                ?>
                 <div><?php the_field('additional_callouts_content'); ?></div>
             </header>
             <!-- Additional Callouts -->

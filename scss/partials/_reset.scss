@@ -25,12 +25,20 @@ img {
     height: auto;
 }
 
+strong {
+    font-weight: 600;
+}
+
 button { 
     outline: 0;
 }
 
 ol, ul { 
     list-style: none;
+}
+
+iframe {
+    width: 100%;
 }
 
 blockquote, q { 

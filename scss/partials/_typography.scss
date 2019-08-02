@@ -19,17 +19,60 @@ h2 {
 }
 
 h3 {
-    
+    font-size: 24px;
 }
 
 h4 {
-    
+    font-size: 22px;
 }
 
 h5 {
-    
+    font-size: 20px;
 }
 
 h6 {
-    
+    font-size: 18px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading-with-separator {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .separator-holder {
+        height: 1px;
+        position: relative;
+        flex: 1 1 auto;
+        min-width: 10%;
+
+        .separator-line {
+            height: 1px;
+            border-top: 1px solid #ccc;
+            display: block;
+            position: relative;
+            top: 1px;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        flex: 0 1 auto;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
 }

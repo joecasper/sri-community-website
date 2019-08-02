@@ -1,0 +1,96 @@
+.form-row {
+    width: 100%;
+    margin-bottom: 30px;
+
+    // No margin on submit row
+    &.submit {
+        margin-bottom: 0;
+
+        // Remove padding from <p> tag added by CF7
+        p { padding: 0; }
+    }
+
+    &.columns {
+        display: flex;
+        justify-content: space-between;
+
+        .column {
+            flex: 1 1 50%;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .red-text { 
+        color: red;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        border: 1px solid #e1e1e1;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        border: 1px solid #e1e1e1;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 0.2s;
+        background-color: #bbb;
+        color: #262626;
+
+        &:hover {
+            background-color: #999;
+        }
+    }
+
+    // Mailchimp Interests Checkboxes
+    #newsletter-topics {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s all;
+    }
+
+    #subscribe-checkbox:checked {
+        #newsletter-topics {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            transition: 0.2s all;
+        }
+    }
+
+    
+}
