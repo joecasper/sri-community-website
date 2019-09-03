@@ -1,0 +1,23 @@
+.page-header {
+    flex: 1 0 100%;
+
+    .page-header-featured_image {
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .page-header-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+
+        h1 {
+            font-size: 28px;
+            font-family: 'Raleway';
+            margin-bottom: 0;
+        }
+    }
+
+    
+}

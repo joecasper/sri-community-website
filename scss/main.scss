@@ -1,14 +1,25 @@
+/*
+Theme Name: SRI Community Website
+Theme URI: https://github.com/joecasper/sri-community-website
+Author: SRI Management
+Version: 2019.1.1
+Text Domain: sricommunitywebsite
+SRI Community Website WordPress Theme © 2019 SRI Management 
+*/
+
 @import 'partials/_reset';
 
 @import 'partials/_buttons';
 @import 'partials/_typography';
 @import 'partials/_forms';
 @import 'partials/_tooltips';
+@import 'partials/_breadcrumbs';
 
 @import 'partials/_header';
 @import 'partials/_sidebar';
 @import 'partials/_footer';
 
+@import 'pages/_pages';
 @import 'pages/_modular';
 @import 'pages/_home';
 @import 'pages/_contact';

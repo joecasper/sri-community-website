@@ -2,11 +2,16 @@
 
 <main id="content" class="has-sidebar">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="header">
+        <header class="page-header">
+            <div class="page-header-featured_image">
                 <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+            </div>
+            <div class="page-header-info">
                 <h1 class="entry-title"><?php the_title(); ?></h1>
-            </header>
+                <?php include 'components/_breadcrumbs.php'; ?>
+            </div>
+        </header>    
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="entry-content">
                 <div class="modular-block">
                     <?php the_content(); ?>

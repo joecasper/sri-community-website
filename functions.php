@@ -17,6 +17,14 @@
         register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'sricommunitywebsite' ) ) );
     }
 
+    // Check for theme updates
+    require( get_template_directory() . '/inc/plugin-update-checker/plugin-update-checker.php');
+    $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	    'https://updates.codemonkeygarage.com/latest-theme-version.json',
+	    __FILE__, //Full path to the main plugin file or functions.php.
+	    'sri-community-website'
+    );
+
     add_action( 'wp_enqueue_scripts', 'sricommunitywebsite_load_scripts' );
     function sricommunitywebsite_load_scripts() {
         wp_enqueue_style( 'sricommunitywebsite-style', get_stylesheet_uri() );
