@@ -27,6 +27,18 @@
                         <a class="button" href="/careers/">View Now</a>
                     </div>
                 </div>
+
+                <hr class="modular-block">
+
+                <div class="modular-block rich-content">
+                    <h3 class="content-heading">For media inquiries, please contact:</h3>
+                    <div class="content">
+                        <p><strong>The Mayfield Group</strong><br>
+                        Nancy Click / Autumn Mayfield<br>
+                        <a href="mailto:nclick@mayfieldpr.com">nclick@mayfieldpr.com</a><br>
+                        <a href="tel:+1-850-421-9007">850.421.9007</a></p>
+                    </div>
+                </div>
             </div>
         </article>
         <!-- Sidebar -->

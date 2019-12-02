@@ -27,7 +27,7 @@
                     <div class="wrapper columns">
                         <div class="column">
                             <h3><?php echo esc_html( get_bloginfo( 'name' ) ); ?></h3>
-                            <p><?php echo get_bloginfo('description');?></p>
+                            <p class="site-description"><?php echo get_bloginfo('description');?></p>
                             <ul class="social-links">
                                 <?php if ( get_field('facebook_page_link_url', 'option') ): ?>
                                 <li>

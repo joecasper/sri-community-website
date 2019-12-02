@@ -13,9 +13,22 @@
         </header>    
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="entry-content">
-                <div class="modular-block">
-                    <?php the_content(); ?>
-                </div>
+                <?php 
+                    // check if the flexible content field has rows of data
+                    if ( have_rows('content_blocks') ):
+                        // loop through the rows of data
+                        while ( have_rows('content_blocks') ) : the_row();
+                            // check current row layout
+                            if ( get_row_layout() == 'image_with_rich_content' ):
+                                include 'components/_image_with_rich_content.php';
+                            endif;
+
+                            if ( get_row_layout() == 'rich_content' ):
+                                include 'components/_rich_content.php';
+                            endif;
+                        endwhile;
+                    endif;
+                ?>
             </div>
         </article>
         <!-- Sidebar -->

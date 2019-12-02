@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style type="text/css">
+            body { padding: 0; margin: 0; }
+
+            header { display: flex; flex-wrap: wrap; }
+
+            #notification-bar { flex: 1 1 100%; width: 100%; border: 1px solid black; padding: 10px 20px; }
+                #notification-bar p { padding: 0; margin: 0; }
+
+            #header-content { flex: 1 1 100%; width: 100%; padding: 20px 0; }
+                #site-logo { flex: 0 1 100%; max-width: 320px; margin: 0 auto; padding: 0; }
+                    #site-logo a { display: block; }
+                    #site-logo img { max-width: 100%; height: auto; }
+                .header-right { display: none; }
+
+            #header-main-nav { display: none; }
+
+            footer { width: 100%; position: fixed; bottom: 0; background: black; color: white; padding: 20px; }
+            footer nav { width: 100%; }
+            footer nav ul { width: 100%; display: flex; justify-content: space-between; list-style: none; padding: 0; margin: 0; }
+            footer nav ul li { flex: 1 1; }
+
+            @media only screen and (min-width: 960px) {
+                #header-content { flex: 1 1 100%; width: 100%; display: flex; justify-content: space-between; padding: 20px 30px; }
+                            
+                .header-right { flex: 1 1 100%; max-width: 480px; display: flex; align-items: center; justify-content: flex-end; }
+                #header-utility-nav { flex: 1 1; }
+                #header-utility-nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+                #header-utility-nav ul li { flex: 1 1; text-align: center; }
+                #text-size-adjuster { }
+
+                #header-main-nav { display: block; flex: 1 1 100%; width: 100%; padding: 10px 30px; }
+                #header-main-nav nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+                #header-main-nav nav ul li { flex: 1 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <section id="notification-bar">
+                <p>This is a test notification.</p>
+            </section>
+            <section id="header-content">
+                <h1 id="site-logo">
+                    <a href="#">
+                        <img src="https://sunflowerattrinity.com/wp-content/uploads/2019/09/New-2019-Sunflower-Logo-Horiz-.png" alt="">
+                    </a>
+                </h1>
+                <div class="header-right">
+                    <nav id="header-utility-nav">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li> | </li>
+                            <li><a href="">FAQs</a></li>
+                            <li> | </li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <div id="text-size-adjuster">
+                        <p><a href="#" class="js-text-size-decrease">A-</a> / <a href="#" class="js-text-size-increase">A+</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="header-main-nav">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Where to Begin</a></li>
+                        <li><a href="">Senior Living</a></li>
+                        <li><a href="">Signature Programs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis. In dictum non consectetur a erat nam. Nibh sed pulvinar proin gravida hendrerit lectus. Metus vulputate eu scelerisque felis imperdiet proin. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Curabitur vitae nunc sed velit dignissim sodales. Vulputate dignissim suspendisse in est ante in nibh mauris. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Massa tincidunt nunc pulvinar sapien. Enim sed faucibus turpis in eu mi bibendum neque.</p>
+        </article>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Senior Living</a></li>
+                    <li><a href="">Schedule Tour</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
